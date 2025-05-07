@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+        <button onclick="handleIncrement()">+</button>
+        <button onclick="handleDecrement()">-</button>
+        <button onclick="handlereset()"></button>
+    <script>
+        let count=0
+        function handleIncrement()
+        {
+            count=count+1
+            document.getElementsByTagName("p")[0].innerText=count
+            return count
+        }
+        function handlereset()
+        {
+            count=0
+            document.getElementsByTagName("p")[0].innerText=count
+            return count
+        }
+        function handleDecrement(){
+            count=count-1
+            document.getElementsByTagName("p")[0].innerText=count
+            return count
+        }
+        console.log(count)
+    </script>
+</body>
+</html>
